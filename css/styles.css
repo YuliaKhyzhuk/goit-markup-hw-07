@@ -330,7 +330,7 @@ nav {
 
 /* section team */
 
-.section-team {
+/* .section-team {
   background-color: #f5f4fa;
 }
 
@@ -411,11 +411,11 @@ nav {
 .social-link-team:focus {
   color: var(--primary-background-color);
   background-color: var(--accent-color);
-}
+} */
 
 /* section clients */
 
-.client-list {
+/* .client-list {
   display: flex;
 }
 
@@ -450,13 +450,13 @@ nav {
 
 .client-icon {
   fill: currentColor;
-}
+} */
 
 /* section portfolio */
 
 /* filter */
 
-.filter-list {
+/* .filter-list {
   display: flex;
   justify-content: center;
   margin-bottom: 50px;
@@ -494,7 +494,7 @@ nav {
 }
 
 /* portfolio */
-
+/* 
 .portfolio-list {
   display: flex;
   flex-wrap: wrap;
@@ -562,10 +562,10 @@ nav {
 
   line-height: 1.88;
   letter-spacing: 0.03em;
-}
+} */ */
 
 /* footer */
-
+/* 
 .foot {
   background-color: #2f303a;
 }
@@ -633,7 +633,7 @@ footer {
   letter-spacing: 0.03em;
 
   text-transform: uppercase;
-}
+} */
 
 /* .social-list-foot {
   display: flex;
@@ -713,7 +713,7 @@ footer {
   text-align: center;
 } */
 
-.portfolio-item-description {
+/* .portfolio-item-description {
   position: absolute;
   top: 0;
   display: inline-block;
@@ -740,7 +740,7 @@ footer {
 .portfolio-link:hover .portfolio-item-description,
 .portfolio-link:focus .portfolio-item-description {
   transform: translateY(0%);
-}
+} */
 
 /* backdrop */
 
