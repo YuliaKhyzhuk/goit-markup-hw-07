@@ -1,34 +1,34 @@
 .logo {
-    display: block;
-    padding-top: 25px;
-    padding-bottom: 25px;
-    color: var(--accent-color);
-    font-family: 'Raleway', sans-serif;
-    font-weight: 700;
-    font-size: 26px;
-    line-height: 1.19;
-    letter-spacing: 0.03em;
-  
-    text-decoration: none;
-  
-    transition: color var(--transition-dur-and-func);
-  }
-  
-  .logo span {
-    transition: color var(--transition-dur-and-func);
-  }
-  
-  .logo-head {
-    color: #000000;
-  }
-  
-  .logo-foot {
-    color: var(--primary-background-color);
-  }
-  
-  .logo:hover,
-  .logo:focus,
-  .logo:hover span,
-  .logo:focus span {
-    color: var(--primary-text-color);
-  }
+  display: block;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  color: var(--accent-color);
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+
+  text-decoration: none;
+
+  transition: color var(--transition-dur-and-func);
+}
+
+.logo span {
+  transition: color var(--transition-dur-and-func);
+}
+
+.logo-head {
+  color: #000000;
+}
+
+.logo-foot {
+  color: var(--primary-background-color);
+}
+
+.logo:hover,
+.logo:focus,
+.logo:hover span,
+.logo:focus span {
+  color: var(--primary-text-color);
+}

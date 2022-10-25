@@ -240,7 +240,7 @@ nav {
 
 /* Overlay */
 
-/* .overlay {
+.overlay {
   max-width: 1600px;
   height: 600px;
   margin-left: auto;
@@ -250,16 +250,16 @@ nav {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-} */
+}
 
 /* sections */
 
-/* .section {
+.section {
   padding-top: 94px;
   padding-bottom: 94px;
-} */
+}
 
-/* .section-title {
+.section-title {
   margin-top: 0;
   margin-bottom: 50px;
 
@@ -269,11 +269,11 @@ nav {
   font-size: 36px;
   line-height: 1.17;
   letter-spacing: 0.03em;
-} */
+}
 
 /* section features */
 
-/* .feature-list {
+.feature-list {
   display: flex;
   justify-content: space-between;
 }
@@ -319,7 +319,7 @@ nav {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-} */
+}
 
 /* section specialization */
 
@@ -562,7 +562,8 @@ nav {
 
   line-height: 1.88;
   letter-spacing: 0.03em;
-} */ */
+} */
+*/
 
 /* footer */
 /* 
@@ -867,7 +868,7 @@ footer {
   border-color: var(--accent-color);
 } */
 
-/* .modal {
+.modal {
   padding: 40px;
 }
 
@@ -1024,4 +1025,4 @@ footer {
 .modal-form-submit:hover,
 .modal-form-submit:focus {
   cursor: pointer;
-}  */
+}
