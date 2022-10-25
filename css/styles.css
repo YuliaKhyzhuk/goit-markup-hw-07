@@ -1,4 +1,4 @@
-/* html {
+html {
   box-sizing: border-box;
 }
 
@@ -6,8 +6,8 @@
 *::before,
 *::after {
   box-sizing: inherit;
-} */
-/* 
+}
+
 :root {
   --primary-text-color: #757575;
   --title-text-color: #212121;
@@ -27,19 +27,19 @@ body {
   padding: 0;
   margin: 0;
   list-style: none;
-} */
+}
 
-/* .container {
+.container {
   margin-left: auto;
   margin-right: auto;
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
-} */
+}
 
 /* logo */
 
-/* .logo {
+.logo {
   display: block;
   padding-top: 25px;
   padding-bottom: 25px;
@@ -72,11 +72,11 @@ body {
 .logo:hover span,
 .logo:focus span {
   color: var(--primary-text-color);
-} */
+}
 
 /* Site nav */
 
-/* .main-nav {
+.main-nav {
   border-bottom: 1px solid #ececec;
   display: flex;
   align-items: center;
@@ -178,11 +178,11 @@ nav {
 .cont-nav .cont:hover,
 .cont-nav .cont:focus {
   color: var(--accent-color);
-} */
+}
 
 /* hero */
 
-/* .hero {
+.hero {
   text-align: center;
   padding-top: 200px;
   padding-bottom: 200px;
@@ -190,9 +190,9 @@ nav {
 
 .hero {
   background-color: #2f303a;
-} */
+}
 
-/* .hero-title {
+.hero-title {
   margin-top: 0;
   margin-bottom: 30px;
   color: var(--primary-background-color);
@@ -206,11 +206,11 @@ nav {
   max-width: 696px;
   margin-left: auto;
   margin-right: auto;
-} */
+}
 
 /*button*/
 
-/* .button {
+.button {
   display: inline-block;
   border: 1px solid transparent;
   border-radius: 4px;
@@ -236,7 +236,7 @@ nav {
 .button:focus {
   color: var(--accent-color);
   background-color: var(--primary-background-color);
-} */
+}
 
 /* Overlay */
 
@@ -743,7 +743,7 @@ footer {
 } */
 
 /* backdrop */
-
+/* 
 .backdrop {
   position: fixed;
   top: 0;
@@ -765,7 +765,7 @@ footer {
 
 /* modal */
 
-.modal {
+/* .modal {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -809,9 +809,9 @@ footer {
 .modal-close-btn:hover .modal-close-icon,
 .modal-close-btn:focus .modal-close-icon {
   fill: var(--accent-color);
-}
+} */
 
-.subscribe {
+/* .subscribe {
   width: 570px;
   height: 86px;
 }
@@ -865,9 +865,9 @@ footer {
 .subscribe-form-input:focus {
   outline: none;
   border-color: var(--accent-color);
-}
+} */
 
-.modal {
+/* .modal {
   padding: 40px;
 }
 
@@ -1024,4 +1024,4 @@ footer {
 .modal-form-submit:hover,
 .modal-form-submit:focus {
   cursor: pointer;
-}
+}  */
