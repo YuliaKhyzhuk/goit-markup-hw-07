@@ -16,6 +16,18 @@
   padding-left: 16px;
   transition: border-color var(--transition-dur-and-func);
   color: var(--primary-background-color);
+
+  &::placeholder {
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+  }
+
+  &:focus {
+    outline: none;
+    border-color: var(--accent-color);
+  }
 }
 
 .subscribe-form-submit {
@@ -38,18 +50,6 @@
   cursor: pointer;
 }
 
-.subscribe-form-input::placeholder {
-  font-size: 16px;
-  line-height: 1.25;
-  letter-spacing: 0.03em;
-  color: rgba(255, 255, 255, 0.6);
-}
-
 .subscribe-form-icon {
   margin-left: 10px;
-}
-
-.subscribe-form-input:focus {
-  outline: none;
-  border-color: var(--accent-color);
 }

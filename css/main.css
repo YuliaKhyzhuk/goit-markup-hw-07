@@ -105,9 +105,7 @@ body {
   cursor: pointer;
   transition: color var(--transition-dur-and-func), background-color var(--transition-dur-and-func);
 }
-
-.button:hover,
-.button:focus {
+.button:hover, .button:focus {
   color: var(--accent-color);
   background-color: var(--primary-background-color);
 }
@@ -120,7 +118,6 @@ body {
   width: 44px;
   height: 44px;
 }
-
 .social-list-foot > .item:not(:last-child) {
   margin-right: 10px;
 }
@@ -136,9 +133,7 @@ body {
   border-radius: 50%;
   transition: background-color var(--transition-dur-and-func);
 }
-
-.social-link-foot:hover,
-.social-link-foot:focus {
+.social-link-foot:hover, .social-link-foot:focus {
   background-color: var(--accent-color);
   border-radius: 50%;
 }
@@ -218,20 +213,16 @@ body {
   border-radius: 50%;
   transition: border-color var(--transition-dur-and-func);
 }
-
-.modal-close-btn:hover,
-.modal-close-btn:focus {
+.modal-close-btn:hover, .modal-close-btn:focus {
   outline: none;
   border-color: var(--accent-color);
+}
+.modal-close-btn:hover .modal-close-icon, .modal-close-btn:focus .modal-close-icon {
+  fill: var(--accent-color);
 }
 
 .modal-close-icon {
   transition: fill var(--transition-dur-and-func);
-}
-
-.modal-close-btn:hover .modal-close-icon,
-.modal-close-btn:focus .modal-close-icon {
-  fill: var(--accent-color);
 }
 
 .modal-form {
@@ -276,10 +267,13 @@ body {
   padding-left: 42px;
   transition: border-color var(--transition-dur-and-func);
 }
-
 .modal-form-input:focus {
   outline: none;
   border-color: var(--accent-color);
+}
+.modal-form-input:focus + .modal-form-icon {
+  border-color: var(--accent-color);
+  fill: var(--accent-color);
 }
 
 .modal-form-icon {
@@ -290,11 +284,6 @@ body {
   transform: translateY(-50%);
   transition: background-color var(--transition-dur-and-func), fill var(--transition-dur-and-func);
   fill: var(--title-text-color);
-}
-
-.modal-form-input:focus + .modal-form-icon {
-  border-color: var(--accent-color);
-  fill: var(--accent-color);
 }
 
 .modal-form-message {
@@ -309,11 +298,9 @@ body {
   letter-spacing: 0.01em;
   transition: border-color var(--transition-dur-and-func);
 }
-
 .modal-form-message::placeholder {
   color: rgba(117, 117, 117, 0.5);
 }
-
 .modal-form-message:focus {
   outline: none;
   border-color: var(--accent-color);
@@ -373,9 +360,7 @@ body {
   border-radius: 4px;
   border: none;
 }
-
-.modal-form-submit:hover,
-.modal-form-submit:focus {
+.modal-form-submit:hover, .modal-form-submit:focus {
   cursor: pointer;
 }
 
@@ -398,6 +383,16 @@ body {
   transition: border-color var(--transition-dur-and-func);
   color: var(--primary-background-color);
 }
+.subscribe-form-input::placeholder {
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+}
+.subscribe-form-input:focus {
+  outline: none;
+  border-color: var(--accent-color);
+}
 
 .subscribe-form-submit {
   display: flex;
@@ -417,20 +412,8 @@ body {
   cursor: pointer;
 }
 
-.subscribe-form-input::placeholder {
-  font-size: 16px;
-  line-height: 1.25;
-  letter-spacing: 0.03em;
-  color: rgba(255, 255, 255, 0.6);
-}
-
 .subscribe-form-icon {
   margin-left: 10px;
-}
-
-.subscribe-form-input:focus {
-  outline: none;
-  border-color: var(--accent-color);
 }
 
 .main-nav {

@@ -18,10 +18,10 @@
   cursor: pointer;
 
   transition: color var(--transition-dur-and-func), background-color var(--transition-dur-and-func);
-}
 
-.button:hover,
-.button:focus {
-  color: var(--accent-color);
-  background-color: var(--primary-background-color);
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+    background-color: var(--primary-background-color);
+  }
 }
