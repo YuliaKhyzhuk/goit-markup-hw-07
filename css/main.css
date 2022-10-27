@@ -23,9 +23,10 @@ html {
   box-sizing: border-box;
 }
 
-*,
-*::before,
-*::after {
+* {
+  box-sizing: inherit;
+}
+*::before, *::after {
   box-sizing: inherit;
 }
 
@@ -71,6 +72,9 @@ body {
   text-decoration: none;
   transition: color var(--transition-dur-and-func);
 }
+.logo:hover, .logo:focus, .logo:hover span, .logo:focus span {
+  color: var(--primary-text-color);
+}
 
 .logo span {
   transition: color var(--transition-dur-and-func);
@@ -82,13 +86,6 @@ body {
 
 .logo-foot {
   color: var(--primary-background-color);
-}
-
-.logo:hover,
-.logo:focus,
-.logo:hover span,
-.logo:focus span {
-  color: var(--primary-text-color);
 }
 
 .button {

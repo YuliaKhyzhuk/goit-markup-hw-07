@@ -12,6 +12,13 @@
   text-decoration: none;
 
   transition: color var(--transition-dur-and-func);
+
+  &:hover,
+  &:focus,
+  &:hover span,
+  &:focus span {
+    color: var(--primary-text-color);
+  }
 }
 
 .logo span {
@@ -24,11 +31,4 @@
 
 .logo-foot {
   color: var(--primary-background-color);
-}
-
-.logo:hover,
-.logo:focus,
-.logo:hover span,
-.logo:focus span {
-  color: var(--primary-text-color);
 }
