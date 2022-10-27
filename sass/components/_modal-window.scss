@@ -34,13 +34,13 @@
     outline: none;
     border-color: var(--accent-color);
   }
-
-  &:hover .modal-close-icon,
-  &:focus .modal-close-icon {
-    fill: var(--accent-color);
-  }
 }
 
 .modal-close-icon {
   transition: fill var(--transition-dur-and-func);
+
+  .modal-close-btn:hover &,
+  .modal-close-btn:focus & {
+    fill: var(--accent-color);
+  }
 }

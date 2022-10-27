@@ -45,11 +45,6 @@
 
 .portfolio-link {
   text-decoration: none;
-
-  &:hover .portfolio-item-description,
-  &:focus .portfolio-item-description {
-    transform: translateY(0%);
-  }
 }
 
 .portfolio-list .title {
@@ -90,6 +85,11 @@
   font-size: 18px;
   line-height: 1.56;
   letter-spacing: 0.03em;
+
+  .portfolio-link:hover &,
+  .portfolio-link:focus & {
+    transform: translateY(0%);
+  }
 }
 
 .portfolio.thumb {

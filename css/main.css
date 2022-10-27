@@ -217,12 +217,12 @@ body {
   outline: none;
   border-color: var(--accent-color);
 }
-.modal-close-btn:hover .modal-close-icon, .modal-close-btn:focus .modal-close-icon {
-  fill: var(--accent-color);
-}
 
 .modal-close-icon {
   transition: fill var(--transition-dur-and-func);
+}
+.modal-close-btn:hover .modal-close-icon, .modal-close-btn:focus .modal-close-icon {
+  fill: var(--accent-color);
 }
 
 .modal-form {
@@ -271,10 +271,6 @@ body {
   outline: none;
   border-color: var(--accent-color);
 }
-.modal-form-input:focus + .modal-form-icon {
-  border-color: var(--accent-color);
-  fill: var(--accent-color);
-}
 
 .modal-form-icon {
   display: block;
@@ -284,6 +280,10 @@ body {
   transform: translateY(-50%);
   transition: background-color var(--transition-dur-and-func), fill var(--transition-dur-and-func);
   fill: var(--title-text-color);
+}
+.modal-form-input:focus + .modal-form-icon {
+  border-color: var(--accent-color);
+  fill: var(--accent-color);
 }
 
 .modal-form-message {
@@ -321,6 +321,9 @@ body {
 .modal-form-own-checkbox-icon {
   display: none;
 }
+.modal-form-checkbox:checked + .modal-form-own-checkbox-icon {
+  display: block;
+}
 
 .modal-form-checkbox {
   transition: border-color var(--transition-dur-and-func), background-color var(--transition-dur-and-func);
@@ -334,10 +337,6 @@ body {
 .modal-form-checkbox:checked + .modal-form-own-checkbox {
   background-color: var(--accent-color);
   border-color: var(--accent-color);
-}
-
-.modal-form-checkbox:checked + .modal-form-own-checkbox .modal-form-own-checkbox-icon {
-  display: block;
 }
 
 .modal-form-link {
@@ -772,9 +771,6 @@ nav {
 .portfolio-link {
   text-decoration: none;
 }
-.portfolio-link:hover .portfolio-item-description, .portfolio-link:focus .portfolio-item-description {
-  transform: translateY(0%);
-}
 
 .portfolio-list .title {
   margin-top: 0;
@@ -809,6 +805,9 @@ nav {
   font-size: 18px;
   line-height: 1.56;
   letter-spacing: 0.03em;
+}
+.portfolio-link:hover .portfolio-item-description, .portfolio-link:focus .portfolio-item-description {
+  transform: translateY(0%);
 }
 
 .portfolio.thumb {

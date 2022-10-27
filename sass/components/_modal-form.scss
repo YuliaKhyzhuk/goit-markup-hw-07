@@ -47,11 +47,6 @@
     outline: none;
     border-color: var(--accent-color);
   }
-
-  &:focus + .modal-form-icon {
-    border-color: var(--accent-color);
-    fill: var(--accent-color);
-  }
 }
 
 .modal-form-icon {
@@ -64,6 +59,11 @@
 
   transition: background-color var(--transition-dur-and-func), fill var(--transition-dur-and-func);
   fill: var(--title-text-color);
+
+  .modal-form-input:focus + & {
+    border-color: var(--accent-color);
+    fill: var(--accent-color);
+  }
 }
 
 .modal-form-message {
@@ -105,6 +105,9 @@
 
 .modal-form-own-checkbox-icon {
   display: none;
+  .modal-form-checkbox:checked + & {
+    display: block;
+  }
 }
 
 .modal-form-checkbox {
@@ -120,10 +123,6 @@
 .modal-form-checkbox:checked + .modal-form-own-checkbox {
   background-color: var(--accent-color);
   border-color: var(--accent-color);
-}
-
-.modal-form-checkbox:checked + .modal-form-own-checkbox .modal-form-own-checkbox-icon {
-  display: block;
 }
 
 .modal-form-link {
