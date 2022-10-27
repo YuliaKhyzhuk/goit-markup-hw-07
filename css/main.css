@@ -455,11 +455,16 @@ nav {
   text-decoration: none;
   transition: color var(--transition-dur-and-func);
 }
+.site-nav .link:hover, .site-nav .link:focus {
+  color: var(--accent-color);
+}
+.site-nav .link.current {
+  color: var(--accent-color);
+}
 
 .link.current {
   position: relative;
 }
-
 .link.current::after {
   content: "";
   position: absolute;
@@ -471,15 +476,6 @@ nav {
   height: 4px;
   background-color: var(--accent-color);
   border-radius: 2px;
-}
-
-.site-nav .link:hover,
-.site-nav .link:focus {
-  color: var(--accent-color);
-}
-
-.site-nav .link.current {
-  color: var(--accent-color);
 }
 
 .cont-nav .item + .item {
@@ -500,24 +496,19 @@ nav {
   text-decoration: none;
   transition: color var(--transition-dur-and-func);
 }
+.cont-nav .cont:hover, .cont-nav .cont:focus {
+  color: var(--accent-color);
+}
 
 .envelope-icon,
 .smartphone-icon {
   fill: currentColor;
 }
 
-.cont-nav .cont:hover,
-.cont-nav .cont:focus {
-  color: var(--accent-color);
-}
-
 .hero {
   text-align: center;
   padding-top: 200px;
   padding-bottom: 200px;
-}
-
-.hero {
   background-color: #2f303a;
 }
 
@@ -625,12 +616,11 @@ nav {
   border-radius: 4px;
   transition: color var(--transition-dur-and-func), border-color var(--transition-dur-and-func);
 }
-
-.client-link:hover,
-.client-link:focus {
+.client-link:hover, .client-link:focus {
   border: 1px solid #2196f3;
   border-radius: 4px;
   color: var(--accent-color);
+  outline: none;
 }
 
 .client-icon {
@@ -661,9 +651,7 @@ nav {
   cursor: pointer;
   transition: color var(--transition-dur-and-func), background-color var(--transition-dur-and-func), box-shadow var(--transition-dur-and-func);
 }
-
-.filter:hover,
-.filter:focus {
+.filter:hover, .filter:focus {
   color: var(--primary-background-color);
   background-color: var(--accent-color);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
@@ -684,7 +672,6 @@ nav {
   background-color: var(--primary-background-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 }
-
 .team-item:nth-child(4n) {
   margin-right: 0;
 }
@@ -716,6 +703,9 @@ nav {
   display: flex;
   justify-content: center;
 }
+.social-list-team > .item:not(:last-child) {
+  margin-right: 10px;
+}
 
 .social-link-item {
   width: 44px;
@@ -732,19 +722,13 @@ nav {
   border-radius: 50%;
   transition: color var(--transition-dur-and-func), background-color var(--transition-dur-and-func);
 }
+.social-link-team:hover, .social-link-team:focus {
+  color: var(--primary-background-color);
+  background-color: var(--accent-color);
+}
 
 .social-link-team .icon {
   fill: currentColor;
-}
-
-.social-list-team > .item:not(:last-child) {
-  margin-right: 10px;
-}
-
-.social-link-team:hover,
-.social-link-team:focus {
-  color: var(--primary-background-color);
-  background-color: var(--accent-color);
 }
 
 .portfolio-list {
@@ -757,24 +741,20 @@ nav {
   margin-bottom: 30px;
   width: calc((100% - 60px) / 3);
 }
+.portfolio-item:nth-child(3n) {
+  margin-right: 0;
+}
+.portfolio-item:nth-last-child(-n+3) {
+  margin-bottom: 0;
+}
 
 .portfolio-link {
   display: block;
   width: 100%;
   transition: box-shadow var(--transition-dur-and-func);
 }
-
-.portfolio-link:hover,
-.portfolio-link:focus {
+.portfolio-link:hover, .portfolio-link:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
-}
-
-.portfolio-item:nth-child(3n) {
-  margin-right: 0;
-}
-
-.portfolio-item:nth-last-child(-n+3) {
-  margin-bottom: 0;
 }
 
 .portfolio-list img {
@@ -791,6 +771,9 @@ nav {
 
 .portfolio-link {
   text-decoration: none;
+}
+.portfolio-link:hover .portfolio-item-description, .portfolio-link:focus .portfolio-item-description {
+  transform: translateY(0%);
 }
 
 .portfolio-list .title {
@@ -832,11 +815,6 @@ nav {
   overflow: hidden;
 }
 
-.portfolio-link:hover .portfolio-item-description,
-.portfolio-link:focus .portfolio-item-description {
-  transform: translateY(0%);
-}
-
 .foot {
   background-color: #2f303a;
 }
@@ -872,7 +850,6 @@ footer {
 .address-foot {
   font-style: normal;
 }
-
 .address-foot .item:not(:last-child) {
   margin-bottom: 9px;
 }

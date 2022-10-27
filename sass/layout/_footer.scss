@@ -35,10 +35,10 @@ footer {
 
 .address-foot {
   font-style: normal;
-}
 
-.address-foot .item:not(:last-child) {
-  margin-bottom: 9px;
+  .item:not(:last-child) {
+    margin-bottom: 9px;
+  }
 }
 
 .foot > .container {
