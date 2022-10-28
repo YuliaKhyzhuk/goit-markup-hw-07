@@ -4,11 +4,11 @@
   margin-bottom: 50px;
 }
 
-.filter-list .item + .item {
+.filter-list__item + .filter-list__item {
   margin-left: 8px;
 }
 
-.filter {
+.filter-list-btn {
   color: var(--title-text-color);
   background-color: #f5f4fa;
   border: none;
