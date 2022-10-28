@@ -59,6 +59,10 @@ body {
   padding-right: 15px;
 }
 
+.logo:hover .logo_color_light, .logo:hover .logo_color_dark, .logo:focus .logo_color_light, .logo:focus .logo_color_dark {
+  color: var(--primary-text-color);
+}
+
 .logo {
   display: block;
   padding-top: 25px;
@@ -72,20 +76,18 @@ body {
   text-decoration: none;
   transition: color var(--transition-dur-and-func);
 }
-.logo:hover, .logo:focus, .logo:hover span, .logo:focus span {
+.logo:hover, .logo:focus {
   color: var(--primary-text-color);
 }
 
-.logo span {
+.logo_color_dark {
+  color: #000000;
   transition: color var(--transition-dur-and-func);
 }
 
-.logo-head {
-  color: #000000;
-}
-
-.logo-foot {
+.logo_color_light {
   color: var(--primary-background-color);
+  transition: color var(--transition-dur-and-func);
 }
 
 .button {
@@ -108,6 +110,38 @@ body {
 .button:hover, .button:focus {
   color: var(--accent-color);
   background-color: var(--primary-background-color);
+}
+
+.social-list-team {
+  display: flex;
+  justify-content: center;
+}
+.social-list-team > .item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.social-link-item {
+  width: 44px;
+  height: 44px;
+}
+
+.social-link-team {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--primary-text-color);
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  transition: color var(--transition-dur-and-func), background-color var(--transition-dur-and-func);
+}
+.social-link-team:hover, .social-link-team:focus {
+  color: var(--primary-background-color);
+  background-color: var(--accent-color);
+}
+
+.social-link-team .icon {
+  fill: currentColor;
 }
 
 .social-list-foot {
@@ -427,22 +461,23 @@ body {
   margin-left: 93px;
 }
 
-.cont-nav {
+.header-contacts {
   display: flex;
   align-items: center;
   margin-left: auto;
 }
 
-nav {
+.navigation {
   display: flex;
   text-align: center;
 }
 
-.site-nav .item + .item {
+.site-nav__item + .site-nav__item {
   margin-left: 50px;
 }
 
-.site-nav .link {
+.site-nav__link,
+.site-nav__link_current {
   display: block;
   padding-top: 32px;
   padding-bottom: 32px;
@@ -454,17 +489,17 @@ nav {
   text-decoration: none;
   transition: color var(--transition-dur-and-func);
 }
-.site-nav .link:hover, .site-nav .link:focus {
-  color: var(--accent-color);
-}
-.site-nav .link.current {
+.site-nav__link:hover, .site-nav__link:focus,
+.site-nav__link_current:hover,
+.site-nav__link_current:focus {
   color: var(--accent-color);
 }
 
-.link.current {
+.site-nav__link_current {
   position: relative;
+  color: var(--accent-color);
 }
-.link.current::after {
+.site-nav__link_current::after {
   content: "";
   position: absolute;
   left: 0;
@@ -477,11 +512,11 @@ nav {
   border-radius: 2px;
 }
 
-.cont-nav .item + .item {
+.header-contacts__item + .header-contacts__item {
   margin-left: 50px;
 }
 
-.cont-nav .cont {
+.header-contacts__link {
   display: flex;
   align-items: center;
   gap: 10px;
@@ -495,12 +530,12 @@ nav {
   text-decoration: none;
   transition: color var(--transition-dur-and-func);
 }
-.cont-nav .cont:hover, .cont-nav .cont:focus {
+.header-contacts__link:hover, .header-contacts__link:focus {
   color: var(--accent-color);
 }
 
-.envelope-icon,
-.smartphone-icon {
+.header-contacts__envelope-icon,
+.header-contacts__smartphone-icon {
   fill: currentColor;
 }
 
@@ -696,38 +731,6 @@ nav {
   line-height: 1.19;
   letter-spacing: 0.03em;
   text-align: center;
-}
-
-.social-list-team {
-  display: flex;
-  justify-content: center;
-}
-.social-list-team > .item:not(:last-child) {
-  margin-right: 10px;
-}
-
-.social-link-item {
-  width: 44px;
-  height: 44px;
-}
-
-.social-link-team {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: var(--primary-text-color);
-  width: 100%;
-  height: 100%;
-  border-radius: 50%;
-  transition: color var(--transition-dur-and-func), background-color var(--transition-dur-and-func);
-}
-.social-link-team:hover, .social-link-team:focus {
-  color: var(--primary-background-color);
-  background-color: var(--accent-color);
-}
-
-.social-link-team .icon {
-  fill: currentColor;
 }
 
 .portfolio-list {
