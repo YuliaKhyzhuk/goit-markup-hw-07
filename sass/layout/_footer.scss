@@ -1,8 +1,5 @@
 .foot {
   background-color: #2f303a;
-}
-
-footer {
   padding-top: 60px;
   padding-bottom: 60px;
 }
@@ -13,7 +10,7 @@ footer {
   margin-bottom: 20px;
 }
 
-.address {
+.footer-contacts__address {
   margin-top: 0;
   margin-bottom: 9px;
   color: var(--primary-background-color);
@@ -23,7 +20,7 @@ footer {
   letter-spacing: 0.03em;
 }
 
-.address-foot .cont {
+.footer-contacts-list__link {
   color: rgba(255, 255, 255, 0.6);
 
   font-size: 14px;
@@ -33,10 +30,10 @@ footer {
   text-decoration: none;
 }
 
-.address-foot {
+.footer-contacts {
   font-style: normal;
 
-  .item:not(:last-child) {
+  .footer-contacts-list__item:not(:last-child) {
     margin-bottom: 9px;
   }
 }

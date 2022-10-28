@@ -406,7 +406,7 @@ body {
   display: flex;
 }
 
-.subscribe-form-input {
+.subscribe-form__input {
   width: 358px;
   height: 50px;
   background-color: #2f303a;
@@ -416,18 +416,18 @@ body {
   transition: border-color var(--transition-dur-and-func);
   color: var(--primary-background-color);
 }
-.subscribe-form-input::placeholder {
+.subscribe-form__input::placeholder {
   font-size: 16px;
   line-height: 1.25;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
 }
-.subscribe-form-input:focus {
+.subscribe-form__input:focus {
   outline: none;
   border-color: var(--accent-color);
 }
 
-.subscribe-form-submit {
+.subscribe-form__submit-btn {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -445,7 +445,7 @@ body {
   cursor: pointer;
 }
 
-.subscribe-form-icon {
+.subscribe-form__icon {
   margin-left: 10px;
 }
 
@@ -819,9 +819,6 @@ body {
 
 .foot {
   background-color: #2f303a;
-}
-
-footer {
   padding-top: 60px;
   padding-bottom: 60px;
 }
@@ -832,7 +829,7 @@ footer {
   margin-bottom: 20px;
 }
 
-.address {
+.footer-contacts__address {
   margin-top: 0;
   margin-bottom: 9px;
   color: var(--primary-background-color);
@@ -841,7 +838,7 @@ footer {
   letter-spacing: 0.03em;
 }
 
-.address-foot .cont {
+.footer-contacts-list__link {
   color: rgba(255, 255, 255, 0.6);
   font-size: 14px;
   line-height: 1.71;
@@ -849,10 +846,10 @@ footer {
   text-decoration: none;
 }
 
-.address-foot {
+.footer-contacts {
   font-style: normal;
 }
-.address-foot .item:not(:last-child) {
+.footer-contacts .footer-contacts-list__item:not(:last-child) {
   margin-bottom: 9px;
 }
 
