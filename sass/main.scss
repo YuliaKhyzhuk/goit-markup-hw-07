@@ -1,6 +1,7 @@
 @import './utils/variables';
 @import './utils/visually-hidden';
 @import './utils/mixins';
+@import './utils/placeholders';
 
 @import './base/common';
 @import './base/section';
@@ -24,7 +25,7 @@
 @import './layout/clients';
 @import './layout/portfolio-filter';
 @import './layout/employees';
-@import './layout/gallery';
+@import './layout/portfolio';
 @import './layout/footer';
-@import './layout/contact-info';
+
 
