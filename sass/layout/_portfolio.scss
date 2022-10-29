@@ -3,7 +3,7 @@
   flex-wrap: wrap;
 }
 
-.portfolio-list_item {
+.portfolio-list__item {
   margin-right: 30px;
   margin-bottom: 30px;
   width: calc((100% - 60px) / 3);
@@ -92,7 +92,7 @@
   }
 }
 
-.portfolio-list_thumb {
+.portfolio-list__thumb {
   position: relative;
   overflow: hidden;
 }

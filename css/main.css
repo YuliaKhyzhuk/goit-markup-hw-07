@@ -724,15 +724,15 @@ body {
   flex-wrap: wrap;
 }
 
-.portfolio-list_item {
+.portfolio-list__item {
   margin-right: 30px;
   margin-bottom: 30px;
   width: calc((100% - 60px) / 3);
 }
-.portfolio-list_item:nth-child(3n) {
+.portfolio-list__item:nth-child(3n) {
   margin-right: 0;
 }
-.portfolio-list_item:nth-last-child(-n+3) {
+.portfolio-list__item:nth-last-child(-n+3) {
   margin-bottom: 0;
 }
 
@@ -799,7 +799,7 @@ body {
   transform: translateY(0%);
 }
 
-.portfolio-list_thumb {
+.portfolio-list__thumb {
   position: relative;
   overflow: hidden;
 }
