@@ -46,6 +46,10 @@ body {
   list-style: none;
 }
 
+.thumb {
+  position: relative;
+}
+
 .section {
   padding-top: 94px;
   padding-bottom: 94px;
